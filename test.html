@@ -1,0 +1,29 @@
+<html>
+    <head>
+    <style>
+        :root {
+            --pc-color-1: rgba(0,1,2,.3);
+            --pc-color-2: red;
+        }
+        .foo {
+            color: var(--pc-color-1);
+            background-color: var(--pc-color-2);
+        }
+
+        ::placeholder {
+            color: gray;
+            }
+
+            .image {
+            background-image: url(image@1x.png);
+            }
+            @media (min-resolution: 2dppx) {
+            .image {
+                background-image: url(image@2x.png);
+            }
+            }
+    </style>
+    <div class="foo">
+        hi!
+    </div>
+</html>

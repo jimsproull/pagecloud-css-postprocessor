@@ -1,0 +1,22 @@
+{
+  "name": "pagecloud-css-postprocessor",
+  "version": "1.0.0",
+  "description": "PostCSS processor for PageCloud pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "",
+  "type": "module",
+  "engines" : { "node" : ">=0.14" } ,
+  "dependencies": {
+    "autoprefixer": "^10.0.2",
+    "postcss": "^8.1.7",
+    "postcss-cli": "^8.2.0",
+    "postcss-custom-properties": "^10.0.0",
+    "postcss-html": "^0.36.0",
+    "postcss-safe-parser": "^5.0.2",
+    "postcss-syntax": "^0.36.2"
+  }
+}
