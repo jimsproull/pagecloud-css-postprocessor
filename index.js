@@ -44,7 +44,7 @@ const source = htmlSource;
 import postcss from "postcss";
 import autoprefixer from "autoprefixer";
 import postcssHtml from "postcss-html";
-import postcssCustomProperties from "postcss-custom-properties";
+import postcssCustomProperties from "./postcss-custom-properties/src/index.mjs";
 
 // const postcss = require("postcss");
 // const autoprefixer = require("autoprefixer");
