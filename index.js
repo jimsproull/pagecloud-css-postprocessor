@@ -41,8 +41,7 @@ import postcssCustomProperties from "postcss-custom-properties";
 const syntax = postcssHtml({});
 
 postcss([postcssCustomProperties, autoprefixer])
-  .process(source, { syntax })
-
+  .process(source, { syntax, from: undefined })
   .then(function (result) {
     console.log(result.content);
   });
