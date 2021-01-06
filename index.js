@@ -36,7 +36,7 @@ const source = htmlSource;
 import postcss from "postcss";
 import autoprefixer from "autoprefixer";
 import postcssHtml from "postcss-html";
-import postcssCustomProperties from "../postcss-custom-properties/index.esm.mjs";
+import postcssCustomProperties from "postcss-custom-properties";
 
 const syntax = postcssHtml({});
 
