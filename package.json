@@ -20,5 +20,13 @@
     "postcss-html": "^0.36.0",
     "postcss-safe-parser": "^5.0.2",
     "postcss-syntax": "^0.36.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1"
   }
 }

@@ -1,3 +1,5 @@
+import { process } from "./process.mjs";
+
 const htmlSource = `<html>
 <head>
 <style>
@@ -33,15 +35,4 @@ const htmlSource = `<html>
 
 const source = htmlSource;
 
-import postcss from "postcss";
-import autoprefixer from "autoprefixer";
-import postcssHtml from "postcss-html";
-import postcssCustomProperties from "postcss-custom-properties";
-
-const syntax = postcssHtml({});
-
-postcss([postcssCustomProperties, autoprefixer])
-  .process(source, { syntax, from: undefined })
-  .then(function (result) {
-    console.log(result.content);
-  });
+console.log(process(source));
