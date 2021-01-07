@@ -7,14 +7,10 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Tests",
             "skipFiles": ["<node_internals>/**"],
-            "program": "${workspaceFolder}/index.js",
-            "env": {
-                "NODE_ENV": "development",
-                "PORT": "3002",
-                "SECRET_KEY": "foo"
-            }
+            "program": "${workspaceFolder}/node_modules/.bin/jasmine",
+            "args": ["tests/*mjs"]
         }
     ]
 }
