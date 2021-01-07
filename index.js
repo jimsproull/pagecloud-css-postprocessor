@@ -4,7 +4,7 @@ import expressValidator from "express-validator";
 import { processCss } from "./process.mjs";
 import { redirectSsl } from "./ssl.js";
 
-const { SECRET_KEY = "foo", PORT = 3002 } = process.env;
+const { SECRET_KEY = "drove-xenon-dee-TIPTOE", PORT = 3002 } = process.env;
 const { check, validationResult } = expressValidator;
 
 const SSL_ENVIRONMENTS = ["staging", "production"];
