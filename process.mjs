@@ -10,7 +10,7 @@ const syntax = postcssHtml({});
  *
  * @param {String} source HTML source
  */
-export const process = async (source) =>
+export const processCss = async (source) =>
     postcss([postcssCustomProperties, autoprefixer])
         .process(source, { syntax, from: undefined })
         .then((result) => result.content);

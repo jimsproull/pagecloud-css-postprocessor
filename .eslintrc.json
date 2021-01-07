@@ -11,6 +11,6 @@
     },
     "rules": {
         "import/prefer-default-export": "off",
-        "import/extensions": [1, "never", { "mjs": "always" }]
+        "import/extensions": [2, "always", { "mjs": "always" }]
     }
 }

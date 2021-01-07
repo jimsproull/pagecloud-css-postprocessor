@@ -8,10 +8,13 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}/index.js"
+            "skipFiles": ["<node_internals>/**"],
+            "program": "${workspaceFolder}/index.js",
+            "env": {
+                "NODE_ENV": "development",
+                "PORT": "3002",
+                "SECRET_KEY": "foo"
+            }
         }
     ]
 }
