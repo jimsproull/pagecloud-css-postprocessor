@@ -19,7 +19,7 @@
     "express-validator": "^6.9.2",
     "postcss": "^8.1.7",
     "postcss-cli": "^8.2.0",
-    "postcss-custom-properties": "git+https://github.com/jimsproull/postcss-custom-properties#master",
+    "postcss-custom-properties": "npm:postcss-custom-properties-jimsproull@^10.0.0",
     "postcss-html": "^0.36.0",
     "postcss-safe-parser": "^5.0.2",
     "postcss-syntax": "^0.36.2"
