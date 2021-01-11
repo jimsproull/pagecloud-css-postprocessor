@@ -1,4 +1,4 @@
-export function redirectSsl() {
+function redirectSsl() {
     return (req, res, next) => {
         if (req.headers["x-forwarded-proto"] !== "https") {
             const location = `https://${req.hostname}${req.originalUrl}`;
@@ -8,3 +8,5 @@ export function redirectSsl() {
         }
     };
 }
+
+exports.redirectSsl = redirectSsl;

@@ -1,7 +1,9 @@
 import { promises } from "fs";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-import { processCss } from "../process.mjs";
+import process from "../src/process.js";
+
+const { processCss } = process;
 
 const testPath = dirname(fileURLToPath(import.meta.url));
 

@@ -1,4 +1,4 @@
-import { app } from "./src/app.mjs";
+const { app } = require("./src/app");
 
 const { PORT = 3002 } = process.env;
 

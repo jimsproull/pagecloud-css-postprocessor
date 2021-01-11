@@ -1,14 +1,14 @@
-import express from "express";
-import expressValidator from "express-validator";
+const express = require("express");
+const expressValidator = require("express-validator");
 
-import { processCss } from "./process.mjs";
-import { redirectSsl } from "./ssl.js";
+const { processCss } = require("./process");
+const { redirectSsl } = require("./ssl");
 
 const { SECRET_KEY = "drove-xenon-dee-TIPTOE" } = process.env;
 const { check, validationResult } = expressValidator;
 
 const SSL_ENVIRONMENTS = ["staging", "production"];
-export const app = express();
+const app = express();
 app.use(express.json({ limit: "100mb", extended: true }));
 app.use(express.urlencoded({ limit: "100mb", extended: true }));
 
@@ -44,3 +44,5 @@ app.post(
         return null;
     },
 );
+
+module.exports = app;

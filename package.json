@@ -4,16 +4,15 @@
   "description": "PostCSS processor for PageCloud pages",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine tests/"
   },
   "author": "",
   "license": "",
-  "type": "module",
   "engines": {
     "node": ">=0.14"
   },
-  "dependencies": {
-    "@vendia/serverless-express": "^4.0.0-rc.2",
+  "dependencies": {    
+    "@vendia/serverless-express": "^4.0.0-rc.5",
     "autoprefixer": "^10.0.2",
     "express": "^4.17.1",
     "express-validator": "^6.9.2",
