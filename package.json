@@ -4,21 +4,21 @@
   "description": "PostCSS processor for PageCloud pages",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine tests/"
   },
   "author": "",
   "license": "",
-  "type": "module",
   "engines": {
     "node": ">=0.14"
   },
-  "dependencies": {
+  "dependencies": {    
+    "@vendia/serverless-express": "^4.0.0-rc.5",
     "autoprefixer": "^10.0.2",
     "express": "^4.17.1",
     "express-validator": "^6.9.2",
     "postcss": "^8.1.7",
     "postcss-cli": "^8.2.0",
-    "postcss-custom-properties": "jimsproull/postcss-custom-properties#master",
+    "postcss-custom-properties": "npm:postcss-custom-properties-jimsproull@^10.0.0",
     "postcss-html": "^0.36.0",
     "postcss-safe-parser": "^5.0.2",
     "postcss-syntax": "^0.36.2"
